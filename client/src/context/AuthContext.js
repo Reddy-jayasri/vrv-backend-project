@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (username, password, role) => {
     try {
-      await axios.post('http://localhost:7001/api/auth/register', { username, password, role });
+      await axios.post('https://vercel.com/jayasris-projects-1b496d30/vrv-backend-project/register', { username, password, role });
       return true;
     } catch (error) {
       console.error('Registration error:', error);
